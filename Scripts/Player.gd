@@ -11,6 +11,9 @@ var jump = 20
 
 var velocity = Vector3()
 
+func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
 func get_input():
 	var input_dir = Vector3()
 	if Input.is_action_pressed("Forward"):
